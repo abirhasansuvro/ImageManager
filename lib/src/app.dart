@@ -26,7 +26,7 @@ class _MyApp extends State<MyApp>{
   }
 
   void fetchImage() async{
-    var jsonD=await get('https://jsonplaceholder/typicode.com/photos/$counter');
+    var jsonD=await get('https://jsonplaceholder.typicode.com/photos/$counter');
     var imageD=ImageModel.fromJSON(json.decode(jsonD.body));
     setState(() {
       container.add(imageD);

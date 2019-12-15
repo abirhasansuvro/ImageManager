@@ -5,7 +5,7 @@ class ImageModel{
   ImageModel(this.id,this.url,this.title);
   ImageModel.fromJSON(obj){
     id=obj['id'];
-    url=obj['src'];
+    url=obj['url'];
     title=obj['title'];
   }
 }
